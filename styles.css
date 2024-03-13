@@ -2,11 +2,13 @@
     box-sizing: border-box;
 }
 * {
-    border: 1px dashed red;
     margin: 0;
     padding: 0;
     align-content: center;
     font-family: "Roboto", sans-serif;
+}
+body {
+    background-color: lightgrey;
 }
 .TopMenu {
     background-color: white;
@@ -30,6 +32,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 5px;
 }
 .ParteSuperior {
     padding: 5px;
@@ -38,6 +41,7 @@
     position: relative;
     height: 40px;
     flex: 0 0 auto;
+    border-bottom: 1px solid rgb(238, 238, 238)
 }
 .ParteSuperior h2 {
     font-size: medium;
@@ -52,12 +56,14 @@
     right: 5px;
 }
 .CajaDeComentarios {
-    height: 50px;
+    max-height: 80px;
+    min-height: 50px;
     width: 600px;
     position: relative;
     bottom: 0px;
     padding: 5px;
-    flex: 0 0 auto
+    flex: 0 0 auto;
+    border-top: 1px solid lightgrey;
 }
 .Imagen {
     overflow: hidden;
@@ -73,4 +79,5 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    aspect-ratio: 598/500;    
 }
